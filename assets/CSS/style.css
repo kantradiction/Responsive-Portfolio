@@ -15,10 +15,23 @@ h2 {
 
 p, span {
 	color: #777777;
+	line-height: 1.5em;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 640px) {
+	
 }
 
 
-/* NAVIGATION CSS */
+/* -----------------------------NAVIGATION CSS----------------------------- */
 
 #header-nav {
 	border-bottom: solid 3px #CCCCCC;
@@ -31,7 +44,7 @@ p, span {
 #nav-bar {
 	height: 100px;
 	background-color: #ffffff;
-	margin: 0 150px;
+	padding: 0 93px 0 50px;
 }
 
 #logo {
@@ -64,7 +77,6 @@ p, span {
 	clear: both;
 	line-height: 100px;
 	font-family: sans-serif;
-	margin-right: 185px;
 }
 
 #navigation a {
@@ -73,24 +85,89 @@ p, span {
 	padding-right: 8px;
 }
 
-/* BODY CONTENT CSS */
+@media screen and (max-width: 980px) {
+
+	#nav-bar {
+		margin: 0 100px;
+		padding: 0;
+	}
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+	#nav-bar {
+		margin: 0 25px;
+	}
+
+	#navigation {
+		margin-right: 25px;
+	}
+
+	
+}
+
+@media screen and (max-width: 640px) {
+
+	#nav-bar {
+		margin: 0;
+		height: 200px;
+	}
+
+	#logo {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	#navigation {
+		margin: 0;
+		float: none;
+		text-align: center;
+	}
+	
+}
+
+/* -----------------------------BODY CONTENT CSS----------------------------- */
 
 #body-content {
 	/*background-color: #E7E7E7;*/
 	background-image: url("../images/triangular.png");
-	padding:50px 0;
+	padding:50px;
 	min-height: 100%;
+}
+
+@media screen and (max-width: 980px) {
+
+	#body-content {
+		padding: 50px 100px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	#body-content {
+		padding: 50px 25px;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+	
 }
 
 /* INDEX.HTML CSS */ 
 #about-me {
-	width:650px;
+	width:58%;
 	/*width:35%;*/
-	margin-left: 150px;
 	background-color: #ffffff;
 	padding: 50px;
 	display: inline-block;
 	border: 1px solid #dddddd;
+	box-sizing: border-box;
 }
 
 #about-me h1 {
@@ -99,7 +176,7 @@ p, span {
 }
 
 #about-me img {
-	width: 300px;
+	width: 50%;
 	float: left;	
 	margin-right: 15px;
 }
@@ -111,11 +188,11 @@ p, span {
 #connect-with-me {
 	float: right;
 	clear: both;
-	margin-right: 250px;
 	background-color: #ffffff;
 	padding: 50px;
-	width: 270px;
+	width: 335px;
 	border: 1px solid #dddddd;
+	box-sizing: border-box;
 }
 
 #connect-with-me h2 {
@@ -138,21 +215,118 @@ p, span {
 	height: 70px;
 }
 
-/* PORTFOLIO CSS */
+@media screen and (max-width: 980px) {
+
+	#about-me {
+		margin-left: 0;
+		width: 50%;
+		padding: 30px;
+		box-sizing: border-box;
+	}
+
+	#connect-with-me {
+		margin-right: 0;
+		padding: 30px;
+		box-sizing: border-box;
+		width: 40%;
+	}
+
+	#connect-with-me h2 {
+		text-align: center;
+	}
+
+	#about-me img {
+		margin: 0 0 15px 0;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	#about-me {
+		box-sizing: border-box;
+		margin-left: 0;
+		width: 100%;
+		padding: 30px;
+	}
+
+	#about-me img {
+		margin: 0 15px 15px 0;
+		width: 50%;
+	}
+
+	#connect-with-me {
+		margin-right: 0;
+		padding: 30px;
+		box-sizing: border-box;
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+
+	#connect-with-me h2 {
+		text-align: left;
+	}
+
+	#connect-with-me ul {
+		text-align: left;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+	#body-content {
+		padding: 50px 25px;
+	}
+
+	#about-me {
+		box-sizing: border-box;
+		margin-left: 0;
+		width: 100%;
+		padding: 30px;
+	}
+
+	#about-me img {
+		margin: 0 0px 15px 0;
+		width: 100%;
+	}
+
+	#connect-with-me {
+		margin-right: 0;
+		padding: 30px;
+		box-sizing: border-box;
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+
+	#connect-with-me ul {
+		text-align: none;
+	}
+
+	.contact-connect-with-me {
+
+	}
+	
+}
+
+/* -----------------------------PORTFOLIO CSS----------------------------- */
 #portfolio {
-	width:650px;
+	width:60%;
 	/*width:35%;*/
-	margin-left: 150px;
 	background-color: #ffffff;
 	padding: 50px;
 	display: inline-block;
 	border: 1px solid #dddddd;
+	box-sizing: border-box;
 }
 
 .portfolio-item {
 	display: inline-block;
-	width: 275px;
-	height: 275px;
+	width: 47%;
+	height: auto;
 	position: relative;
 	margin-bottom: 30px;
 }
@@ -172,7 +346,7 @@ p, span {
 	background-color: #4AAAA5;
 	color: white!important;
 	position: absolute;
-	bottom: 25px;
+	bottom: 0;
 	text-align: center;
 }
 
@@ -186,17 +360,47 @@ p, span {
 float: right;
 }
 
-/*CONTACT CSS*/
+@media screen and (max-width: 980px) {
+	#portfolio {
+		width: 50%;
+		padding: 30px;
+	}
+
+	.portfolio-item {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#portfolio {
+		width: 100%;
+	}
+
+	.portfolio-item {
+		width: 47%;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+	.portfolio-item {
+		width: 100%;
+	}
+	
+}
+
+/* -----------------------------CONTACT CSS----------------------------- */
 
 #contact {
 
-	width:650px;
+	width:60%;
 	/*width:35%;*/
-	margin-left: 150px;
 	background-color: #ffffff;
 	padding: 50px;
 	display: inline-block;
 	border: 1px solid #dddddd;
+	box-sizing: border-box;
 }
 
 #contact h1 {
@@ -225,8 +429,30 @@ float: right;
 	width: 100%;
 }
 
+@media screen and (max-width: 980px) {
 
-/* FOOTER CSS */
+	#contact {
+		width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	#contact {
+		width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+	
+}
+
+
+
+
+/* -----------------------------FOOTER CSS----------------------------- */
 #footer-content {
 	height: 100px;
 	width: 100%;
@@ -239,4 +465,41 @@ float: right;
 
 #footer-content span {
 	color: #b7aaaa;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 640px) {
+	
+}
+
+/* MEDIA QUERIES */
+
+/* 980PX */
+@media screen and (max-width: 980px) {
+	
+
+	
+}
+
+/* 768PX */
+
+@media screen and (max-width: 768px) {
+	
+	
+}
+
+
+/* 640PX */
+@media screen and (max-width: 640px) {
+	
+
+	
+
 }
